@@ -16,7 +16,7 @@ definition, and mixing them gives numbers matching neither table.
 | Sensitivity | 0.505 | 0.700 |
 | Specificity | 0.953 | 0.772 |
 | Precision | 0.950 | 0.627 |
-| Balanced accuracy | — | 0.736 |
+| Balanced accuracy | 0.729 | 0.736 |
 
 Sensitivity is directly comparable between the columns: the ground-truth
 positive population is identical under both region definitions (78,586 tiles).
