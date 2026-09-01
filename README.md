@@ -1,4 +1,4 @@
-# Scar quantification in whole-slide histology
+# Deciphering Complex Vision Transformer Feature Vectors in Post-Burn Scar Histology
 
 Tile-level classification of scar tissue in whole-slide images, scored against
 expert annotations drawn in QuPath.
