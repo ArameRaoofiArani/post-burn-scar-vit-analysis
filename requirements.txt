@@ -1,14 +1,13 @@
-# Core analysis and figures -- needed by every script
-numpy>=1.24
-scipy>=1.10
-matplotlib>=3.7
-pandas>=2.0
-scikit-learn>=1.3
-Pillow>=10.0
+# Core analysis and figures
+numpy>=2.2.6
+scipy>=1.15.3
+matplotlib>=3.10.9
+pandas>=2.3.3
+scikit-learn>=1.7.2
+Pillow>=12.3.0
 
-# Whole-slide image and QuPath access -- needed only by
-# 03_extract_ground_truth.py and figure_tissue_panels.py.
-# Both wrap native software that pip does NOT install: see README.md.
-openslide-python>=1.3
-paquo>=0.7
-shapely>=2.0
+# Whole-slide image and QuPath access
+# Requires native installations; see README.md
+openslide-python>=1.4.6
+paquo>=0.9.0
+shapely>=2.1.2
