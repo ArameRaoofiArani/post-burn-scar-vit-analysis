@@ -103,7 +103,7 @@ One subfolder holds work that isn't part of the pipeline:
 
 | Folder | Contents |
 | --- | --- |
-| `Experiments/` | Alternative classification rules that were tried and measured (peripheral clusters, outlier pruning at two granularities), plus an alternative metrics report. Also where the macro-centroid-gated rule is produced, as the pre-pruning grid of the Task 5 script. See [experiments/README.md](experiments/README.md). |
+| `Experiments/` | Alternative classification rules that were tried and measured (peripheral clusters, outlier pruning at two granularities), plus an alternative metrics report. Also where the macro-centroid-gated rule is produced, as the pre-pruning grid of the Task 5 script. See [Experiments/README.md](Experiments/README.md). |
 
 ### Order to run them
 
