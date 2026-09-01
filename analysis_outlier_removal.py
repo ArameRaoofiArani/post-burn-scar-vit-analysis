@@ -3,7 +3,7 @@
     python analysis_outlier_removal.py
 
 The complete version of the outlier-removal experiment. The exploratory
-scripts in experiments/ produce ground-truth-scored grids at
+scripts in Experiments/ produce ground-truth-scored grids at
 contamination="auto" only; this runs every (level x method x contamination)
 arm end to end, so each yields scar predictions, GT metrics, silhouette, and the
 SPATIAL STRUCTURE of the removed tiles. It also produces the six-panel
