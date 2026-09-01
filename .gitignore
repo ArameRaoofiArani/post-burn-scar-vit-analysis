@@ -1,0 +1,39 @@
+# ---- data: never commit slides, predictions or annotations ----------------
+data/
+*.npy
+*.npz
+*.mrxs
+*.svs
+*.ndpi
+*.scn
+*.vms
+*.vmu
+*.qpproj
+*.qpproj.backup
+
+# ---- generated output -----------------------------------------------------
+outputs/
+scar_predictions/
+ground_truth/
+four_panel_figures/
+scar_prediction_backups/
+subcluster_previews_*/
+score_distribution_*/
+cluster_separation/
+*_scar_prediction_preview.png
+*_alignment_final*.png
+
+# ---- environment ----------------------------------------------------------
+venv/
+.venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---- editors and OS -------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
