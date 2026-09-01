@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31701432/README.md)
 # Experiments
 
 Alternative classification rules that were tried and measured. None of them
