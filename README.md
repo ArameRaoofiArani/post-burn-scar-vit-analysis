@@ -242,8 +242,6 @@ Plus `scar_centres_5.npy` `(5, D)` and, for the diagnostic only,
 - **`FLIP_VERTICALLY`** in `figure_tissue_panels.py` lists slides whose
   epidermis lands on the wrong side after the standard rotation. It is specific
   to this dataset and will need revisiting for new slides.
-- **Sub-cluster indices are categorical**, not a severity scale. Grid values are
-  `cluster_index + 1`, with 0 meaning "not scar".
 - **The false-negative scripts mask by the valid region alone**, without also
   requiring a tile to contain tissue, which is the convention that analysis was
   run under. `04_evaluate_agreement.py` requires both. A ground-truth tile the model
@@ -252,23 +250,15 @@ Plus `scar_centres_5.npy` `(5, D)` and, for the diagnostic only,
 - **Pooled metrics pool the counts**, then compute rates from the total — they
   are not the mean of the per-slide rates, so each slide contributes in
   proportion to how many tiles it has.
-- **ROC curves score the raw scar channel**, not the thresholded prediction, so
-  the AUC does not move when the classification rule changes.
-- `02_classify_tiles.py` copies any existing scar predictions into a timestamped
-  folder before overwriting them.
 - **`01_write_tiles_to_qupath.py` writes to your QuPath project** in append mode and
-  clears each image's existing detections first. Back the project up before the
+  clears each image's existing detections first. Back up the project before the
   first run. Every other script opens the project read-only or not at all.
 
 ## Data
 
-No slide images, prediction arrays or annotations are included in this
+No slide images, prediction arrays, or annotations are included in this
 repository, and `.gitignore` is set up to keep them out. Add nothing that
 identifies a patient or animal subject.
 
 Access to the whole-slide images, histologist annotations and model prediction
 arrays may be available subject to permission from the original data owners.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
